@@ -21,3 +21,7 @@ Pretty screenshot:
 [![NTocwjl.png](https://i.imgur.com/NTocwjl.png)](https://i.imgur.com/NTocwjl.png)
 
 **Edited July 13, 2017 by godarklight**
+
+https://forum.kerbalspaceprogram.com/index.php?/topic/91042-*
+
+[Unlicense..md](https://github.com/zer0Kerbal/ExceptionDetector/files/8258404/Unlicense.md)
