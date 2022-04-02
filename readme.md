@@ -1,30 +1,10 @@
 <!-- readme.md v1.6.6.1
-ExceptionDetector (SWAL)
+ExceptionDetector (ED)
 created: 01 Apr 2019
 updated: 
 -->
 
 <!--this file: CC BY-ND 3.0 unported by zer0Kerbal-->
-
-[Download from SpaceDock](http://spacedock.info/mod/600).
-
-Licence: Unlicence (Public Domain).
-
-Source: [Github](https://github.com/godarklight/ExceptionDetector)
-
-**So what \*is\* this thing?**
-
-When a program does an invalid operation (such as dividing an integer by zero) an error called an exception is thrown.
-
-Exceptions can easily put KSP into a bad state and random things will stop working.
-
-This mod is a simple indicator for players to find misbehaving mods.
-
-Pretty screenshot:
-
-[![NTocwjl.png](https://i.imgur.com/NTocwjl.png)](https://i.imgur.com/NTocwjl.png)
-
-**Edited July 13, 2017 by godarklight**
 
 [![ExceptionDetector][MOD:shd:latest]][MOD:forum] [![KSP version][KSP:shd]][KSP:url]  [![License][LIC:shd]][LIC:url]  
 [![Curseforge][CURSFG:shd]][CURSFG:url] [![CKAN][CKAN:shd]][CKAN:url] [![GitHub][GITHUB:shd]][GITHUB:url] [![SpaceDock][SPCDCK:shd]][SPCDCK:url]  
@@ -34,13 +14,14 @@ Pretty screenshot:
 
 
 
-# ExceptionDetector (SWAL)
+# ExceptionDetector (ED)
 
-An add-on that adds a safety fence around the Kerbal Space Center, for Kerbal Space Program.
+This add-on creates a log file by hooking into the logger callbacks in Unity and is able to extract more value from the available information. Assists in finding issues that you might not even be aware of and might be able to find any pesky add-on(s) that might be causing your issues. For Kerbal Space Program.
 
 
 
-## By [`zer0Kerbal`][zer0Kerbal], originally by [`godarklight`][godarklight]
+## By [`zer0Kerbal`][zer0Kerbal], originally by [`godarklight`][godarklight] and [Grigetio "SlimJimDodger"][grigetio]
+
 
 ### Help Wanted
 
@@ -87,6 +68,18 @@ or [![CKAN][CKAN:img]][CKAN:url] [^3]
 
 * [Kerbal Space Program][KSP:url] [![Kerbal Space Program][KSP:shd]][KSP:url] [^1]
 
+### Suggests
+
+* [Module Manager][mm] [^2]
+
+### Conflicts
+
+* [ExceptionDetectorUpdated][edu]
+
+### Tags
+
+* plugin, convenience, information
+
 ---
 
 <div style="border:0.5px solid Tomato; background-color: #BADA55; color: #FF0000; text-align:center">
@@ -99,6 +92,7 @@ or [![CKAN][CKAN:img]][CKAN:url] [^3]
 see [Attribution.md][MOD:attr] for comprehensive list</summary>
 >
 >* [godarklight][godarklight] for this glorious mod!
+>* [Grigetio "SlimJimDodger"][grigetio] for updating and maintaining!
 
 ### Legal Mumbo Jumbo (License *provenance*)
 
@@ -112,9 +106,14 @@ see [Attribution.md][MOD:attr] for comprehensive list</summary>
 > ***All bundled mods are distributed under their own licenses***  
 > ***All art assets (textures, models, animations, sounds) are distributed under their own licenses***
 
+#### Original (1)- Maintainer: [`grigetio` aka SlimJimDodger][grigetio]
+
+> Forum: [Thread][MOD:1:thread] - Download: [SpaceDock][MOD:1:dnload] - Source: [GitHub][MOD:1:source]  
+> License: [![License][LIC:1:shd]][LIC:1:url]
+
 #### Original (0) - Author: [`godarklight`][godarklight]
 
-> Forum: [Thread][MOD:0:thread] - Download: [SpaceDock][MOD:0:download] - Source: [GitHub][MOD:0:source]  
+> Forum: [Thread][MOD:0:thread] - Download: [SpaceDock][MOD:0:dnload] - Source: [GitHub][MOD:0:source]  
 > License: [![License][LIC:0:shd]][LIC:0:url]
 
 <!-- mod links -->
@@ -138,11 +137,18 @@ see [Attribution.md][MOD:attr] for comprehensive list</summary>
 [MOD:pages:shd]: https://github.com/zer0Kerbal/ExceptionDetector/actions/workflows/pages/pages-build-deployment/badge.svg "GitHub IO"
 
 <!--- mod provenance -->
+[MOD:1:source]: https://github.com/SlimJimDodger/ExceptionDetectorUpdated "GitHub"
+[MOD:1:thread]: https://forum.kerbalspaceprogram.com/index.php?/topic/181576-*/ "KSP Forum"  
+[MOD:1:dnload]: https://spacedock.info/mod/2063 "SpaceDock"  
+
 [MOD:0:source]: https://github.com/godarklight/KSPExceptionDetector "GitHub"
-[MOD:0:thread]:https://forum.kerbalspaceprogram.com/index.php?/topic/98658-*/ "KSP Forum"  
-[MOD:0:download]: https://spacedock.info/mod/457 "SpaceDock"  
+[MOD:0:thread]: https://forum.kerbalspaceprogram.com/index.php?/topic/91042-*/ "KSP Forum"  
+[MOD:0:dnload]: https://spacedock.info/mod/600 "SpaceDock"  
 
 <!--- license provenance-->
+[LIC:1:url]: https://unlicense.org/ "Unilicense"
+[LIC:1:shd]: https://img.shields.io/badge/License-Unilicense-black?style=plastic&labelColor=white "Unilicense"
+
 [LIC:0:url]: https://unlicense.org/ "Unilicense"
 [LIC:0:shd]: https://img.shields.io/badge/License-Unilicense-black?style=plastic&labelColor=white "Unilicense"
 
@@ -175,6 +181,7 @@ see [Attribution.md][MOD:attr] for comprehensive list</summary>
 [mm]: https://github.com/net-lisias-ksp/ModuleManager "Module Manager /L"
 [twk]: https://forum.kerbalspaceprogram.com/index.php?/topic/179030-*/ "TweakScale"
 [ckan]: https://forum.kerbalspaceprogram.com/index.php?/topic/154922-*/ "CKAN"
+[edu]: https://forum.kerbalspaceprogram.com/index.php?/topic/181576-* "ExceptionDetectorUpdated"
 
 <!-- financial support -->
 [PAYPAL:img]: https://img.shields.io/badge/Buy%20me%20some%20-LFO-BADA55?style=for-the-badge&logo=paypal&labelColor=FFDD00 "PayPal"
@@ -203,8 +210,9 @@ see [Attribution.md][MOD:attr] for comprehensive list</summary>
 [SW]: https://raw.githubusercontent.com/zer0Kerbal/zer0Kerbal/zed'K/Localization/img/Swedish-flag-sm.png "Svenska"
 [TW]: https://raw.githubusercontent.com/zer0Kerbal/zer0Kerbal/zed'K/Localization/img/Taiwanese-flag-sm.png "国语"
 
+[godarklight]: https://forum.kerbalspaceprogram.com/index.php?/profile/92588-*/ "godarklight"
+[grigetio]: https://forum.kerbalspaceprogram.com/index.php?/profile/167030-*/ "Grigetio `SlimJimDodger`"
 [zer0Kerbal]: https://forum.kerbalspaceprogram.com/index.php?/profile/190933-*/ "zer0Kerbal"
-[godarklight]: https://forum.kerbalspaceprogram.com/index.php?/profile/92588-*/ "godarklight"  
 
 <!-- footnotes -->
 [^1]: ***may*** work on other versions (YMMV)
