@@ -76,7 +76,7 @@ namespace ExceptionDetector
 			kspDlls.Add("assembly-csharp");
 			//kspDlls.Add("kspassets.dll");
 			//kspDlls.Add("kspcore.dll");
-			// kspDlls.Add("ksputil.dll");
+			//kspDlls.Add("ksputil.dll");
 			unityDlls.Add("unityengine.dll");
 			//unityDlls.Add("unityengine.networking.dll");
 			unityDlls.Add("unityengine.ui.dll");
@@ -138,6 +138,7 @@ namespace ExceptionDetector
 			if (doublePass) // generally high level built-in modules of pattern msg 1: 'loading <name>' msg 2: 'failed message'    <--// note the lack of <name> on second message 
 			{
 				// WriteLog(stackTrace);
+				// save it
 				// save this string for the double-pass message to user - we need to append the next message if there is an error
 				preStack = condition;
 				if (logType != LogType.Log)
@@ -166,7 +167,7 @@ namespace ExceptionDetector
 				{
 					prvConditionStatement = condition;
 
-					strMessage = "*EDU*\t" + preStack + "--> " + CleanCondition(condition) + "\n";
+					strMessage = "*ED*\t" + preStack + "--> " + CleanCondition(condition) + "\n";
 					WriteLog(strMessage);
 					AddException(strMessage);
 					stackLogTick = 0;
@@ -174,7 +175,7 @@ namespace ExceptionDetector
 				}
 				else if (singlePass)
 				{
-					WriteLog("*EDU*\t" + condition + "\n");
+					WriteLog("*ED*\t" + condition + "\n");
 					AddException(CleanCondition(condition));
 				}
 				else if (stackLogTick == 0 && !condition.Equals(prvConditionStatement))
@@ -201,8 +202,8 @@ namespace ExceptionDetector
 					{
 						AddException(CleanCondition(condition));
 					}
-					logTheMessage(condition, stkMsg, "**EDU-Exception");
-					WriteLog("EDU-EXCEPTION****\n\n\n");
+					logTheMessage(condition, stkMsg, "**ED-Exception");
+					WriteLog("ED-EXCEPTION****\n\n\n");
 
 					//ExceptionDetector.Instance.OnGUI();
 					using (StringReader sr = new StringReader(stackTrace))
@@ -489,7 +490,6 @@ namespace ExceptionDetector
 				}
 			}
 		}
-
 	}
 
 	public class StackInfo
