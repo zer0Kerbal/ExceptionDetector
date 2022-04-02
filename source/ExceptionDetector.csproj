@@ -27,7 +27,7 @@
     <ConsolePause>false</ConsolePause>
     <Prefer32Bit>false</Prefer32Bit>
     <PlatformTarget>anycpu</PlatformTarget>
-    <OutputPath>..\GameData\ExceptionDetector\Plugins\</OutputPath>
+    <OutputPath>..\GameData\godarklight\ExceptionDetector\Plugins\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>embedded</DebugType>
@@ -36,9 +36,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-    <OutputPath>..\GameData\ExceptionDetector\Plugins\</OutputPath>
+    <OutputPath>..\GameData\godarklight\ExceptionDetector\Plugins\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="$(K112)\KSP_x64_Data\Managed\Assembly-CSharp.dll">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="$(K112)\KSP_x64_Data\Managed\UnityEngine.dll">
       <Private>False</Private>
     </Reference>
@@ -49,9 +52,6 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="$(K112)\KSP_x64_Data\Managed\UnityEngine.TextRenderingModule.dll">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="$(K112)\KSP_x64_Data\Managed\Assembly-CSharp*.dll">
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -68,6 +68,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <!-- <Content Include="Icons\edu.png" />
+    <Content Include="Icons\edu_large.png" />
+    <Content Include="Icons\edu_small.png" /> -->
     <Content Include="Properties\Version.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Version.cs</LastGenOutput>
