@@ -257,8 +257,8 @@ labels:
 
 # Milestones: define milestones for Issues and Pull Requests
 milestones:
-  - title: 0.3.0.0-adoption
-    description: progress toward 0.3.0.0-adoption
+  - title: 1.3.0.0-adoption
+    description: progress toward 1.3.0.0-adoption
     state: open
 
   - title: Localization - Master
