@@ -10,8 +10,7 @@
 | spacedock  | (https://spacedock.info/mod/600)                                 |
 | ckan       | ExceptionDetector                                                |
 
-
-## Version 1.3.0.0-adoption - `<EDITION>`
+## Version 1.3.0.0-adoption - `<Exceptional Log>`
 
 * 01 Apr 2022  
 * Release for Kerbal Space Program [KSP 1.12.x]
@@ -29,7 +28,7 @@
 ### Status
 
 * Issues
-  * closes #4 - ExceptionDetector 1.3.0.0-adoption `<EDITION!>`
+  * closes #4 - ExceptionDetector 1.3.0.0-adoption `<Exceptional Log!>`
   * closes #5 - 1.3.0.0 Verify Legal Mumbo Jumbo
   * closes #6 - 1.3.0.0 Update Documentation
   * closes #7 - 1.3.0.0 Create Social Media
