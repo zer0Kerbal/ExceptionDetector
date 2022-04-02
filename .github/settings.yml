@@ -12,7 +12,7 @@ repository:
   name: ExceptionDetector
 
   # A short description of the repository that will show up on GitHub
-  description: "This add-on creates a log file by hooking into the logger callbacks in Unity and is able to extract more value from the available information. Assists in finding issues that you might not even be aware of and might be able to find any pesky add-on(s) that might be causing your issues. For Kerbal Space Program."
+  description: This add-on creates a log file by hooking into the logger callbacks in Unity and is able to extract more value from the available information. Assists in finding issues that you might not even be aware of and might be able to find any pesky add-on(s) that might be causing your issues. For Kerbal Space Program.
 
   # A URL with more information about the repository
   homepage: https://forum.kerbalspaceprogram.com/index.php?/topic/207511-*
