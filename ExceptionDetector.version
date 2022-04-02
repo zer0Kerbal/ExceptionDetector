@@ -11,16 +11,16 @@
 	},
 	"VERSION" :
 	{
-		"MAJOR" : 1,
-		"MINOR" : 0,
-		"PATCH" : 99,
+		"MAJOR" : 0,
+		"MINOR" : 2,
+		"PATCH" : 0,
 		"BUILD" : 0
 	},
 	"KSP_VERSION" :
 	{
 		"MAJOR" : 1,
-		"MINOR" : 12,
-		"PATCH" : 3
+		"MINOR" : 4,
+		"PATCH" : 0
 	},
 	"KSP_VERSION_MIN" :
 	{
@@ -31,12 +31,12 @@
 	"KSP_VERSION_MAX" :
 	{
 		"MAJOR" : 1,
-		"MINOR" : 12,
+		"MINOR" : 4,
 		"PATCH" : 9999
 	},
 	"INSTALL_LOC" :
 	{
 		"NAME" :	  "ExceptionDetector",
-		"DIRECTORY" : "ExceptionDetector"
+		"DIRECTORY" : "godarklight/ExceptionDetector"
 	}
 }
