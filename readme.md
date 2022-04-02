@@ -210,7 +210,7 @@ see [Attribution.md][MOD:attr] for comprehensive list</summary>
 [SW]: https://raw.githubusercontent.com/zer0Kerbal/zer0Kerbal/zed'K/Localization/img/Swedish-flag-sm.png "Svenska"
 [TW]: https://raw.githubusercontent.com/zer0Kerbal/zer0Kerbal/zed'K/Localization/img/Taiwanese-flag-sm.png "国语"
 
-[godarklight]: https://forum.kerbalspaceprogram.com/index.php?/profile/92588-*/ "godarklight"  
+[godarklight]: https://forum.kerbalspaceprogram.com/index.php?/profile/92588-*/ "godarklight"
 [grigetio]: https://forum.kerbalspaceprogram.com/index.php?/profile/167030-*/ "Grigetio `SlimJimDodger`"
 [zer0Kerbal]: https://forum.kerbalspaceprogram.com/index.php?/profile/190933-*/ "zer0Kerbal"
 
