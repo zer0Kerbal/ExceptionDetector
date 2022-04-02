@@ -101,12 +101,11 @@ namespace ExceptionDetector
 		private void Update()
 		{
 
-			//if ((Input.GetKey(KeyCode.RightControl) || Input.GetKey(KeyCode.LeftControl)) &&
-			//	Input.GetKeyDown(KeyCode.F2))
-			//{
-			//	isVisible = !isVisible;
-
-			//}
+			if ((Input.GetKey(KeyCode.RightControl) || Input.GetKey(KeyCode.LeftControl)) &&
+				Input.GetKeyDown(KeyCode.F2))
+			{
+				isVisible = !isVisible;
+			}
 
 			//if (lastFrameTime < Time.time + (1 / 24f)) // 24fps
 			if (lastFrameTime < Time.time + 1)
@@ -132,7 +131,7 @@ namespace ExceptionDetector
 		{
 			try
 			{
-				this.title = "ExceptionDetector - EDU";
+				this.title = "Exception Detector - ED";
 				// this.message = (this.HasBeenUpdated ? "You have successfully updated KSP-AVC to v" : "You have successfully installed KSP-AVC v") + this.version;
 			}
 			catch (Exception ex)
@@ -147,6 +146,19 @@ namespace ExceptionDetector
 
 		private void PositionWindow()
 		{
+
+// if (windowX + windowWidth >= Screen.currentResolution.width)
+// {
+//       windowX = Screen.currentResolution.width * 0.05;
+//       windowWidth = Screen.currentResolution.width * 0.9;
+// }
+
+// if (windowY + windowHeight >= Screen.currentResolution.height)
+// {
+//       windowY = Screen.currentResolution.height * 0.05;
+//       windowHeight = Screen.currentResolution.height * 0.9;
+// }
+
 			if (this.hasPositioned || !(this.position.width > 0) || !(this.position.height > 0))
 			{
 				return;
