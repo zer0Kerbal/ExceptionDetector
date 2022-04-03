@@ -1,6 +1,6 @@
 # Changelog  
   
-| modName    | ExceptionDetector (ED)                                           |
+| modName    | Exception Detector (ED)                                           |
 | ---------- | ---------------------------------------------------------------- |
 | license    | BSD-2-Clause                                                     |
 | author     | godarklight and zer0Kerbal                                       |
