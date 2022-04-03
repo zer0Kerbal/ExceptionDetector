@@ -28,10 +28,10 @@
 ### Status
 
 * Issues
-  * closes #4 - ExceptionDetector 1.3.0.0-adoption `<Exceptional Log!>`
-  * closes #5 - 1.3.0.0 Verify Legal Mumbo Jumbo
-  * closes #6 - 1.3.0.0 Update Documentation
-  * closes #7 - 1.3.0.0 Create Social Media
+  * closes #6 - ExceptionDetector 1.3.0.0-adoption `<Exceptional Log!>`
+  * closes #7 - 1.3.0.0 Verify Legal Mumbo Jumbo
+  * closes #8 - 1.3.0.0 Update Documentation
+  * closes #9 - 1.3.0.0 Create Social Media
 
 ---
 
