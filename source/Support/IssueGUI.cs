@@ -24,6 +24,7 @@ using System.Text;
 using System.Reflection;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 #endregion
 
@@ -105,7 +106,6 @@ namespace ExceptionDetector
 			//	Input.GetKeyDown(KeyCode.F2))
 			//{
 			//	isVisible = !isVisible;
-
 			//}
 
 			//if (lastFrameTime < Time.time + (1 / 24f)) // 24fps
@@ -132,7 +132,7 @@ namespace ExceptionDetector
 		{
 			try
 			{
-				this.title = "ExceptionDetector - EDU";
+				this.title = "Exception Detector - ED";
 				// this.message = (this.HasBeenUpdated ? "You have successfully updated KSP-AVC to v" : "You have successfully installed KSP-AVC v") + this.version;
 			}
 			catch (Exception ex)
@@ -147,6 +147,19 @@ namespace ExceptionDetector
 
 		private void PositionWindow()
 		{
+
+// if (windowX + windowWidth >= Screen.currentResolution.width)
+// {
+//       windowX = Screen.currentResolution.width * 0.05;
+//       windowWidth = Screen.currentResolution.width * 0.9;
+// }
+
+// if (windowY + windowHeight >= Screen.currentResolution.height)
+// {
+//       windowY = Screen.currentResolution.height * 0.05;
+//       windowHeight = Screen.currentResolution.height * 0.9;
+// }
+
 			if (this.hasPositioned || !(this.position.width > 0) || !(this.position.height > 0))
 			{
 				return;
@@ -194,7 +207,8 @@ namespace ExceptionDetector
 		{
 			try
 			{
-				GUILayout.MaxHeight(Screen.height * .65f);
+				GUILayout.MaxHeight(Screen.currentResolution.height * .85f);
+				//GUILayout.MaxHeight(Screen.height * .65f);
 				GUILayout.BeginVertical(HighLogic.Skin.box);
 				GUILayout.Label(String.Format("TOP {0} ISSUES", msgCount), this.titleStyle, GUILayout.Width(Screen.width * 0.2f));
 				GUILayout.Label(String.Format("More info availabe at {0}", Path.GetFullPath(ExceptionDetector.LogFile)), this.titleStyle, GUILayout.Width(Screen.width * 0.2f)); 

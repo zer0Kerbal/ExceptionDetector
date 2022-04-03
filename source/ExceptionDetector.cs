@@ -45,8 +45,10 @@ namespace ExceptionDetector
 		private static string prvConditionStatement = String.Empty;
 
 		private static readonly string _assemblyPath = Path.GetDirectoryName(typeof(ExceptionDetector).Assembly.Location);
+			
+		private static readonly string directory = KSPUtil.ApplicationRootPath + "/Logs/ExceptionDetector/";
 		internal static String SettingsFile { get; } = Path.Combine(_assemblyPath, "settings.cfg");
-		internal static String LogFile { get; } = Path.Combine(_assemblyPath, "Log/edu.log");
+		internal static String LogFile { get; } = Path.Combine(_assemblyPath, "Log/ed.log");
 		private IssueGUI fiGui;
 		public static ExceptionDetector Instance { get; private set; }
 		internal static string strMessage = String.Empty;
@@ -76,7 +78,7 @@ namespace ExceptionDetector
 			kspDlls.Add("assembly-csharp");
 			//kspDlls.Add("kspassets.dll");
 			//kspDlls.Add("kspcore.dll");
-			// kspDlls.Add("ksputil.dll");
+			//kspDlls.Add("ksputil.dll");
 			unityDlls.Add("unityengine.dll");
 			//unityDlls.Add("unityengine.networking.dll");
 			unityDlls.Add("unityengine.ui.dll");
@@ -85,6 +87,17 @@ namespace ExceptionDetector
 		protected void Start()
 		{
 			fiGui = gameObject.AddComponent<IssueGUI>();
+
+			if (!Directory.Exists(directory)) Directory.CreateDirectory(directory);
+			DirectoryInfo source = new DirectoryInfo(directory);
+			foreach (FileInfo fi in source.GetFiles())
+			{
+				var creationTime = fi.CreationTime;
+				if (creationTime < (DateTime.Now - new TimeSpan(1, 0, 0, 0)))
+				{
+					fi.Delete();
+				}
+			}
 		}
 
 		public void OnDestroy()
@@ -138,6 +151,7 @@ namespace ExceptionDetector
 			if (doublePass) // generally high level built-in modules of pattern msg 1: 'loading <name>' msg 2: 'failed message'    <--// note the lack of <name> on second message 
 			{
 				// WriteLog(stackTrace);
+				// save it
 				// save this string for the double-pass message to user - we need to append the next message if there is an error
 				preStack = condition;
 				if (logType != LogType.Log)
@@ -166,7 +180,7 @@ namespace ExceptionDetector
 				{
 					prvConditionStatement = condition;
 
-					strMessage = "*EDU*\t" + preStack + "--> " + CleanCondition(condition) + "\n";
+					strMessage = "*ED*\t" + preStack + "--> " + CleanCondition(condition) + "\n";
 					WriteLog(strMessage);
 					AddException(strMessage);
 					stackLogTick = 0;
@@ -174,7 +188,7 @@ namespace ExceptionDetector
 				}
 				else if (singlePass)
 				{
-					WriteLog("*EDU*\t" + condition + "\n");
+					WriteLog("*ED*\t" + condition + "\n");
 					AddException(CleanCondition(condition));
 				}
 				else if (stackLogTick == 0 && !condition.Equals(prvConditionStatement))
@@ -201,8 +215,8 @@ namespace ExceptionDetector
 					{
 						AddException(CleanCondition(condition));
 					}
-					logTheMessage(condition, stkMsg, "**EDU-Exception");
-					WriteLog("EDU-EXCEPTION****\n\n\n");
+					logTheMessage(condition, stkMsg, "**ED-Exception");
+					WriteLog("ED-EXCEPTION****\n\n\n");
 
 					//ExceptionDetector.Instance.OnGUI();
 					using (StringReader sr = new StringReader(stackTrace))
@@ -489,7 +503,6 @@ namespace ExceptionDetector
 				}
 			}
 		}
-
 	}
 
 	public class StackInfo

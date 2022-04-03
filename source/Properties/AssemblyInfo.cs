@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ExceptionDetector")]
-[assembly: AssemblyDescription("ExceptionDetector for Kerbal Space Program.")]
+[assembly: AssemblyTitle("Exception Detector")]
+[assembly: AssemblyDescription("Exception Detector for Kerbal Space Program.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ExceptionDetector")]
-[assembly: AssemblyCopyright("Copyright © 2014 godarklight,  2022 zer0Kerbal")]
+[assembly: AssemblyProduct("Exception Detector")]
+[assembly: AssemblyCopyright("Copyright © 2014 godarklight, 2021,2022 zer0Kerbal")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
