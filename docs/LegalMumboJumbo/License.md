@@ -25,7 +25,7 @@ Further resources on the **2-clause BSD license**
 
 *Note: This license has also been called the "Simplified BSD License" and the "FreeBSD License". See also the [3-clause BSD License](https://opensource.org/licenses/BSD-3-Clause).*
 
-Copyright <2022> <zer0Kerbal>
+Copyright © 2021, 2022 zer0Kerbal>
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
