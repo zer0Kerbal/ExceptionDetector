@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "label": "ExceptionDetector",
+ "label": "Exception Detector",
  "labelColor": "BADA55",
  "message": "1.3.0.0",
  "color": "darkgreen",
