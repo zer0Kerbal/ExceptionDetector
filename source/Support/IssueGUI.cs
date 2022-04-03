@@ -24,6 +24,7 @@ using System.Text;
 using System.Reflection;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 #endregion
 
@@ -101,11 +102,11 @@ namespace ExceptionDetector
 		private void Update()
 		{
 
-			if ((Input.GetKey(KeyCode.RightControl) || Input.GetKey(KeyCode.LeftControl)) &&
-				Input.GetKeyDown(KeyCode.F2))
-			{
-				isVisible = !isVisible;
-			}
+			//if ((Input.GetKey(KeyCode.RightControl) || Input.GetKey(KeyCode.LeftControl)) &&
+			//	Input.GetKeyDown(KeyCode.F2))
+			//{
+			//	isVisible = !isVisible;
+			//}
 
 			//if (lastFrameTime < Time.time + (1 / 24f)) // 24fps
 			if (lastFrameTime < Time.time + 1)
@@ -206,7 +207,8 @@ namespace ExceptionDetector
 		{
 			try
 			{
-				GUILayout.MaxHeight(Screen.height * .65f);
+				GUILayout.MaxHeight(Screen.currentResolution.height * .85f);
+				//GUILayout.MaxHeight(Screen.height * .65f);
 				GUILayout.BeginVertical(HighLogic.Skin.box);
 				GUILayout.Label(String.Format("TOP {0} ISSUES", msgCount), this.titleStyle, GUILayout.Width(Screen.width * 0.2f));
 				GUILayout.Label(String.Format("More info availabe at {0}", Path.GetFullPath(ExceptionDetector.LogFile)), this.titleStyle, GUILayout.Width(Screen.width * 0.2f)); 

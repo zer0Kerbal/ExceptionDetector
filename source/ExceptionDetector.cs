@@ -45,8 +45,10 @@ namespace ExceptionDetector
 		private static string prvConditionStatement = String.Empty;
 
 		private static readonly string _assemblyPath = Path.GetDirectoryName(typeof(ExceptionDetector).Assembly.Location);
+			
+		private static readonly string directory = KSPUtil.ApplicationRootPath + "/Logs/ExceptionDetector/";
 		internal static String SettingsFile { get; } = Path.Combine(_assemblyPath, "settings.cfg");
-		internal static String LogFile { get; } = Path.Combine(_assemblyPath, "Log/edu.log");
+		internal static String LogFile { get; } = Path.Combine(_assemblyPath, "Log/ed.log");
 		private IssueGUI fiGui;
 		public static ExceptionDetector Instance { get; private set; }
 		internal static string strMessage = String.Empty;
@@ -85,6 +87,17 @@ namespace ExceptionDetector
 		protected void Start()
 		{
 			fiGui = gameObject.AddComponent<IssueGUI>();
+
+			if (!Directory.Exists(directory)) Directory.CreateDirectory(directory);
+			DirectoryInfo source = new DirectoryInfo(directory);
+			foreach (FileInfo fi in source.GetFiles())
+			{
+				var creationTime = fi.CreationTime;
+				if (creationTime < (DateTime.Now - new TimeSpan(1, 0, 0, 0)))
+				{
+					fi.Delete();
+				}
+			}
 		}
 
 		public void OnDestroy()

@@ -10,7 +10,6 @@
 | spacedock  | (https://spacedock.info/mod/600)                                 |
 | ckan       | ExceptionDetector                                                |
 
-
 ## Version 1.3.0.0-adoption - `<Exceptional Log>`
 
 * 01 Apr 2022  
