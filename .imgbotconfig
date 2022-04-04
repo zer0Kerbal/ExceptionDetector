@@ -3,8 +3,8 @@
     "ignoredFiles": [
         "GameData/*",
         "docs/LegalMumboJumbo/*",
-        "GameData/KerbthulhuKineticsProgram/MoarKerbals/*",
-        "GameData/KerbthulhuKineticsProgram/MoarKerbals/Textures/*",
+        "GameData/godarklight/ExceptionDetector/*",
+        "GameData/godarklight/ExceptionDetector/Icons/*",
         "source/*",
         "**/Assets/**",
         "**/Flags/**",
