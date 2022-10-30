@@ -9,10 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ExceptionDetector</RootNamespace>
     <AssemblyName>ExceptionDetector</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <Deterministic>true</Deterministic>
-    <LangVersion>latest</LangVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+      <FileAlignment>512</FileAlignment>
+      <Deterministic>true</Deterministic>
+      <LangVersion>latest</LangVersion>
     <TargetFrameworkProfile />
     <!-- <ProductVersion>12.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion> -->
@@ -24,19 +24,23 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
     <Prefer32Bit>false</Prefer32Bit>
+    <ConsolePause>false</ConsolePause>
     <PlatformTarget>anycpu</PlatformTarget>
     <OutputPath>..\GameData\godarklight\ExceptionDetector\Plugins\</OutputPath>
+    <DocumentationFile>..\docs\Code\Code.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>embedded</DebugType>
-    <Optimize>true</Optimize>
+    <!-- <DebugSymbols>true</DebugSymbols> -->
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Optimize>true</Optimize>
+    <PlatformTarget>anycpu</PlatformTarget>
     <ConsolePause>false</ConsolePause>
     <OutputPath>..\GameData\godarklight\ExceptionDetector\Plugins\</OutputPath>
+    <DocumentationFile>..\docs\Code\Code.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="$(K112)\KSP_x64_Data\Managed\Assembly-CSharp.dll">
