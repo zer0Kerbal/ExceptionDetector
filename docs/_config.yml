@@ -1,1 +1,11 @@
+# config v1.0.3.0
+# Jekyll configuration
+name: Exception Detector
+description: An Addon for <a href="https://www.kerbalspaceprogram.com" style="color: #bada55" target="_blank">Kerbal Space Program</a>.
+logo: /img/HeroLogo_1920x1920.jpg
 theme: jekyll-theme-architect
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
