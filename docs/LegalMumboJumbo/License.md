@@ -8,7 +8,7 @@ tags: license,bsd,simple,legal,mumbo,jumbo,page,kerbal,ksp,zer0Kerbal,zedK
 
 <!--
 BSD-2-Clause.md v1.0.4.1
-Mini Sample Return Capsule (MSRC)  
+Exception Detector (EXCD)
 created: 01 Feb 2022
 updated: 30 Mar 2022
 -->
