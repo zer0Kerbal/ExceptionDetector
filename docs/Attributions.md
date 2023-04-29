@@ -8,14 +8,14 @@ tags: thank-you,directions,page,kerbal,ksp,zer0Kerbal,zedK
 
 <!--
 Attributions.md v1.0.4.0
-Exception Detector (ED)
+Exception Detector (EXCD)
 created: 01 Apr 2022
 updated: 01 Apr 2022
 -->
 
 <script src="https://kit.fontawesome.com/0ea5493613.js" crossorigin="anonymous"></script>
 <i class="fa fa-gear fa-spin fa-2x" style="color: firebrick"></i>
-# Exception Detector (ED)
+# Exception Detector (EXCD)
 [Home](./index.md)
 
 ## Attribution
