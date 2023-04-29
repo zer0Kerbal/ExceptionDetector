@@ -3,7 +3,7 @@
 | modName    | Exception Detector (EXCD) by godarklight                          |
 | ---------- | ----------------------------------------------------------------- |
 | license    | BSD-2-Clause                                                      |
-| author     | godarklight, Grigetio and zer0Kerbal                              |
+| author     | godarklight, SlimJimDodger and zer0Kerbal                         |
 | forum      | (https://forum.kerbalspaceprogram.com/index.php?/topic/207511-*/) |
 | github     | (https://github.com/zer0Kerbal/zer0Kerbal/ExceptionDetector)      |
 | curseforge | (https://www.curseforge.com/kerbal/ksp-mods/ExceptionDetector)    |
