@@ -1,5 +1,5 @@
 {
-	"NAME"		     : "Exception Detector (ED)",
+	"NAME"		     : "Exception Detector (EXCD)",
 	"URL"			 : "https://raw.githubusercontent.com/zer0Kerbal/ExceptionDetector/master/ExceptionDetector.version",
 	"DOWNLOAD"	     : "https://github.com/zer0Kerbal/ExceptionDetector/releases/latest",
 	"CHANGE_LOG_URL" : "https://raw.githubusercontent.com/zer0Kerbal/ExceptionDetector/master/changelog.md",
