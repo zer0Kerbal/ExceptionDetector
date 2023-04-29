@@ -1,5 +1,5 @@
 <!-- readme.md v1.6.6.1
-Exception Detector (ED)
+Exception Detector (EXCD)
 created: 01 Apr 2019
 updated: 
 -->
@@ -14,7 +14,7 @@ updated:
 
 
 
-# Exception Detector (ED)
+# Exception Detector (EXCD)
 
 This add-on creates a log file by hooking into the logger callbacks in Unity and is able to extract more value from the available information. Assists in finding issues that you might not even be aware of and might be able to find any pesky add-on(s) that might be causing your issues. For Kerbal Space Program.
 
