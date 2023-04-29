@@ -7,13 +7,13 @@ tags: installation,directions,page,kerbal,ksp,zer0Kerbal,zedK
 ---
 
 <!-- ManualInstallation.md v1.1.1.0
-Exception Detector (ED)
+Exception Detector (EXCD)
 created: 01 Apr 2019
 updated: 01 Apr 2022 -->
 
 <!-- based upon work by Lisias -->
 
-# Exception Detector (ED)
+# Exception Detector (EXCD)
 
 An add-on that adds a safety fence around the Kerbal Space Center, for Kerbal Space Program.
 
