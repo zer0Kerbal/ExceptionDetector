@@ -8,7 +8,7 @@ tags: legal,mumbo,jumbo,page,kerbal,ksp,zer0Kerbal,zedK
 
 <!--
 LegalMumboJumbo.md v1.0.4.1
-Exception Detector (ED)
+Exception Detector (EXCD)
 created: 01 Feb 2022
 updated: 30 Mar 2022
 -->
@@ -16,7 +16,7 @@ updated: 30 Mar 2022
 <script src="https://kit.fontawesome.com/0ea5493613.js" crossorigin="anonymous"></script>
 <i class="fa fa-gear fa-spin fa-2x" style="color: firebrick"></i>
 
-# Exception Detector (ED)
+# Exception Detector (EXCD)
 
 [Home](/index.md)
 
