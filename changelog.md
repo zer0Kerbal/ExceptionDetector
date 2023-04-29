@@ -1,14 +1,14 @@
 # Changelog  
   
-| modName    | Exception Detector (EXCD)                                           |
-| ---------- | ---------------------------------------------------------------- |
-| license    | BSD-2-Clause                                                     |
-| author     | godarklight and zer0Kerbal                                       |
-| forum      | (https://forum.kerbalspaceprogram.com/index.php?/topic/207511-*) |
-| github     | (https://github.com/zer0Kerbal/zer0Kerbal/ExceptionDetector)     |
-| curseforge | (https://www.curseforge.com/kerbal/ksp-mods/ExceptionDetector)   |
-| spacedock  | (https://spacedock.info/mod/600)                                 |
-| ckan       | ExceptionDetector                                                |
+| modName    | Exception Detector (EXCD) by godarklight                          |
+| ---------- | ----------------------------------------------------------------- |
+| license    | BSD-2-Clause                                                      |
+| author     | godarklight, Grigetio and zer0Kerbal                              |
+| forum      | (https://forum.kerbalspaceprogram.com/index.php?/topic/207511-*/) |
+| github     | (https://github.com/zer0Kerbal/zer0Kerbal/ExceptionDetector)      |
+| curseforge | (https://www.curseforge.com/kerbal/ksp-mods/ExceptionDetector)    |
+| spacedock  | (https://spacedock.info/mod/600)                                  |
+| ckan       | ExceptionDetector                                                 |
 
 ## Version 1.3.0.0-adoption - `<Exceptional Log>`
 
