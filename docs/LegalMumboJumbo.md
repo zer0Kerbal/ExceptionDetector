@@ -2,29 +2,50 @@
 permalink: /LegalMumboJumbo.html
 title: Legal Mumbo Jumbo
 description: when the revolution comes, .... Legal Mumbo Jumbo (Douglas Adams)
-# layout: bare
 tags: legal,mumbo,jumbo,page,kerbal,ksp,zer0Kerbal,zedK
 ---
-
 <!--
-LegalMumboJumbo.md v1.0.4.1
+LegalMumboJumbo.md v1.1.0.0
 Exception Detector (EXCD)
+created: 01 Apr 2022
+updated: 29 Apr 2023
+
+TEMPLATE: LegalMumboJumbo.md v1.0.6.0
 created: 01 Feb 2022
-updated: 30 Mar 2022
--->
+updated: 14 Apr 2023 -->
 
 <script src="https://kit.fontawesome.com/0ea5493613.js" crossorigin="anonymous"></script>
-<i class="fa fa-gear fa-spin fa-2x" style="color: firebrick"></i>
+<i class="fa-solid fa-file-contract fa-beat-fade fa-3x" style="--fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.25;color: #6495ED" ></i>
 
-# Exception Detector (EXCD)
+## [Exception Detector (EXCD)][mod]
 
-[Home](/index.md)
+[Home](./index.md)
 
-* License
-  * ![License](/LegalMumboJumbo/License.md)
-* Forums
-  * ![Forum](/LegalMumboJumbo/FORUM-01.png)
-  <!-- * ![Forum](./LegalMumboJumbo/FORUM-02.png)
-  * ![Forum](./LegalMumboJumbo/FORUM-03.png) -->
+## Legal Mumbo Jumbo
 
-<!-- this file CC BY-ND 3.0 Unported by zer0Kerbal -->
+<!-- no toc -->
+* Table of Contents
+  * [License](#license)
+  * [Original License](#original-license)
+  * [Forum Post #1](#forum-i)
+
+### License
+
+[License](./LegalMumboJumbo/License.md)
+[top](#legal-mumbo-jumbo)
+
+### Original License
+
+[License](./LegalMumboJumbo/OrigLicense.md)
+[top](#legal-mumbo-jumbo)
+
+### Forum I
+
+![Forum](./LegalMumboJumbo/FORUM-01.png)
+[top](#legal-mumbo-jumbo)
+
+---
+
+THIS FILE: CC BY-ND 4.0 by zer0Kerbal
+
+[mod]: https://www.curseforge.com/kerbal/ksp-mods/ExceptionDetector "Exception Detector (EXCD)"
