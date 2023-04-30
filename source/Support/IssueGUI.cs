@@ -25,6 +25,7 @@ using System.Reflection;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Collections;
+using KSP.Localization;
 
 #endregion
 
@@ -132,7 +133,9 @@ namespace ExceptionDetector
 		{
 			try
 			{
-				this.title = "Exception Detector - ED";
+				
+				this.title = Localizer.Format("#EXCD-name") + " " + Localizer.Format("#EXCD-abbv") + " v" + Version.SText;
+				//this.title = Localizer.Format("#EXCD_ExceptionDetector_6");		// #EXCD_ExceptionDetector_6 = Exception Detector - EXCD
 				// this.message = (this.HasBeenUpdated ? "You have successfully updated KSP-AVC to v" : "You have successfully installed KSP-AVC v") + this.version;
 			}
 			catch (Exception ex)
@@ -210,8 +213,12 @@ namespace ExceptionDetector
 				GUILayout.MaxHeight(Screen.currentResolution.height * .85f);
 				//GUILayout.MaxHeight(Screen.height * .65f);
 				GUILayout.BeginVertical(HighLogic.Skin.box);
-				GUILayout.Label(String.Format("TOP {0} ISSUES", msgCount), this.titleStyle, GUILayout.Width(Screen.width * 0.2f));
-				GUILayout.Label(String.Format("More info availabe at {0}", Path.GetFullPath(ExceptionDetector.LogFile)), this.titleStyle, GUILayout.Width(Screen.width * 0.2f)); 
+
+				GUILayout.Label(Localizer.Format("#EXCD-05", msgCount), this.titleStyle, GUILayout.Width(Screen.width * 0.2f));
+				GUILayout.Label(Localizer.Format("#EXCD-06}", Path.GetFullPath(ExceptionDetector.LogFile)), this.titleStyle, GUILayout.Width(Screen.width * 0.2f)); 
+
+				//GUILayout.Label(String.Format("TOP {0} ISSUES", msgCount), this.titleStyle, GUILayout.Width(Screen.width * 0.2f));
+				//GUILayout.Label(String.Format("More info availabe at {0}", Path.GetFullPath(ExceptionDetector.LogFile)), this.titleStyle, GUILayout.Width(Screen.width * 0.2f)); 
 				for (int x = 0; x < msgCount; x++)
 				{
 					GUILayout.Label(message[x], this.listStyle, GUILayout.Width(Screen.width * 0.2f));
