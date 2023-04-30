@@ -9,9 +9,9 @@ updated: 15 Apr 2023
 
 THIS FILE: CC BY-ND 4.0 by zer0Kerbal -->
 
-[![Exception Detector (EXCD)][SHD:mod]][CURSFG:url] [![KSP version][KSP:shd]][KSP:url]  [![License][LIC:shd]][LIC:url]  
-[![Curseforge][CURSFG:shd]][CURSFG:url] [![GitHub][GITHUB:shd]][GITHUB:url] [![SpaceDock][SPCDCK:shd]][SPCDCK:url] [![CKAN][ckan:shd]][ckan:url]  
-[![GitHub Pages][SHD:pgs]][pages]
+[![Exception Detector (EXCD)][SHD:mod]][CURSFG:url]  
+[![KSP version][KSP:shd]][KSP:url] [![License][LIC:shd]][LIC:url]  
+[![Curseforge][CURSFG:shd]][CURSFG:url] [![GitHub][GITHUB:shd]][GITHUB:url] [![GitHub Pages][SHD:pgs]][pages]
 
 ![Code][SHD:cde]
 
@@ -138,7 +138,7 @@ Comment, click, like, share, up-vote, subscribe
 <!--- shields -->
 [SHD:cde]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ExceptionDetector/master/json/code.json
 [SHD:mod]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ExceptionDetector/master/json/mod.json
-[SHD:pgs]: https://github.com/zer0Kerbal/ExceptionDetector/actions/workflows/pages/pages-build-deployment/badge.svg "GitHub IO"
+[SHD:pgs]: https://img.shields.io/badge/GitHub-Pages-white?style=plastic&labelColor=9cf&logoColor=181717&logo=github/ "GitHub IO"
 
 <!--- mod provenance -->
 [MOD:1:dnload]: https://spacedock.info/mod/2063 "SpaceDock"  
