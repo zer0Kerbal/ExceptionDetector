@@ -13,7 +13,7 @@ THIS FILE: CC BY-ND 4.0 by zer0Kerbal -->
 [![KSP version][KSP:shd]][KSP:url] [![License][LIC:shd]][LIC:url]  
 [![Curseforge][CURSFG:shd]][CURSFG:url] [![GitHub][GITHUB:shd]][GITHUB:url] [![GitHub Pages][SHD:pgs]][pages]
 
-![Code][SHD:cde] ![Exception Detector][SHD:dll] 
+![Code][SHD:cde] ![Exception Detector][SHD:dll]
 
 # [Exception Detector (EXCD)][CURSFG:url]
 
