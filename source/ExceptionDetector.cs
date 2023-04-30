@@ -1,3 +1,31 @@
+#region BSD-2-Clause Licence
+/*  Copyright(c) 2014 godarklight, 2021,2023 zer0Kerbal
+ *
+ *	All rights reserved.
+ *
+ *	Redistribution and use in source and binary forms, with or without modification,
+ *	are permitted provided that the following conditions are met:
+ *
+ *  * Redistributions of source code must retain the above copyright notice,
+ *    this list of conditions and the following disclaimer.
+ *  * Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution.
+ *
+ *	THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ *	"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ *	LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ *	A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER
+ *	OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ *	EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ *	PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ *	PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ *	LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ *	NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ *	SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+#endregion
+
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -5,16 +33,18 @@ using System.Reflection;
 using System.Text;
 using System.Linq;
 using UnityEngine;
+using KSP.Localization;
 
 namespace ExceptionDetector
 {
-	// TODO
-	/// <summary>
-	///  split memory into scenes (dump into scene.log and load.log?)
-	///  choose what to show
-	///		-- > implies more sorting 
-	///	debug log switches make no sense anymore
-	/// </summary>
+	//TODO
+	// <summary>
+	//  split memory into scenes (dump into scene.log and load.log?)
+	//  choose what to show
+	//		-- > implies more sorting 
+	//	ensure gui vertical window size < max window size
+	//	debug log switches make no sense anymore
+	// </summary>
 	[KSPAddon(KSPAddon.Startup.Instantly, true)]
 	public class ExceptionDetector : MonoBehaviour
 	{
@@ -180,7 +210,7 @@ namespace ExceptionDetector
 				{
 					prvConditionStatement = condition;
 
-					strMessage = "*ED*\t" + preStack + "--> " + CleanCondition(condition) + "\n";
+					strMessage = Localizer.Format("#EXCD-abbv") + "\t" + preStack + "--> " + CleanCondition(condition) + "\n";		// #EXCD-02 = *EXCD*\t
 					WriteLog(strMessage);
 					AddException(strMessage);
 					stackLogTick = 0;
@@ -188,7 +218,7 @@ namespace ExceptionDetector
 				}
 				else if (singlePass)
 				{
-					WriteLog("*ED*\t" + condition + "\n");
+					WriteLog(Localizer.Format("#EXCD-abbv") + "\t" + condition + "\n");		// #EXCD-02 = *EXCD*\t
 					AddException(CleanCondition(condition));
 				}
 				else if (stackLogTick == 0 && !condition.Equals(prvConditionStatement))
@@ -208,14 +238,14 @@ namespace ExceptionDetector
 					if (!String.IsNullOrEmpty(condition) && ExceptionCount.ContainsKey(CleanCondition(condition)) && ExceptionCount[CleanCondition(condition)] > 20)
 					{
 						ulong ct = ExceptionCount[CleanCondition(condition)];
-						stkMsg = "Exception has been called " + ++ct + " times";
+						stkMsg = Localizer.Format("#EXCD-00", ++ct);		// #EXCD-00 = Exception has been called <<1>> times
 						ExceptionCount[CleanCondition(condition)] = ct;
 					}
 					else
 					{
 						AddException(CleanCondition(condition));
 					}
-					logTheMessage(condition, stkMsg, "**ED-Exception");
+					logTheMessage(condition, stkMsg, Localizer.Format("#EXCD-01"));		// #EXCD-01 = **ED-Exception
 					WriteLog("ED-EXCEPTION****\n\n\n");
 
 					//ExceptionDetector.Instance.OnGUI();
@@ -305,7 +335,7 @@ namespace ExceptionDetector
 
 			if (String.IsNullOrEmpty(condition))
 			{
-				retVal = "UNKNOWN ERROR";
+				retVal = Localizer.Format("#EXCD-03");		// #EXCD-03 = UNKNOWN ERROR
 			}
 			else
 			{
@@ -474,7 +504,7 @@ namespace ExceptionDetector
 						throwTime.Dequeue();
 					}
 					StringBuilder sb = new StringBuilder();
-					sb.Append("Throws per second: ");
+					sb.Append(Localizer.Format("#EXCD-04"));		// #EXCD-04 = Throws per second: 
 					sb.Append(throwTime.Count / 10f);
 					sb.AppendLine(" TPS.");
 					foreach (KeyValuePair<string, Dictionary<StackInfo, int>> dllEntry in methodThrows)

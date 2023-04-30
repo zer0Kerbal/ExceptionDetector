@@ -1,7 +1,7 @@
 ﻿<#
 /*
    * Version.tt
-   * 2.0.2.2
+   * 2.0.4.0
 
    This file is licensed under the Do What the F* You Want to Public License ( http://www.wtfpl.net )
    * by zer0Kerbal.
@@ -112,17 +112,28 @@ using System.Reflection;
 
 namespace <#= PROJECT_NAME #>
 {
+	/// <summary>Version - retrieved at compile from <#= PROJECT_NAME #>.version</summary>
 	public static class Version
 	{
+		/// <summary>Major revision</summary>
 		public const int major = <#= major #>;
+		/// <summary>Minor revision</summary>
 		public const int minor = <#= minor #>;
+		/// <summary>Patch revision</summary>
 		public const int patch = <#= patch #>;
+		/// <summary>Build revision</summary>
 		public const int build = <#= build #>;
+		/// <summary>Version String const</summary>
 		public const string Number = "<#= major #>.<#= minor #>.<#= patch #>.<#= build #>";
 #if DEBUG
+		/// <summary>Debug Version String const</summary>
         public const string Text = Number + "-zed'K BETA DEBUG";
+		/// <summary>Debug SVersion String const</summary>
+        public const string SText = Number + "-zed'K BETA DEBUG";
 #else
+		/// <summary>Text Version String const</summary>
         public const string Text = Number + "-zed'K";
+		/// <summary>Plain Text Version String const</summary>
 		public const string SText = Number;
 #endif
 	}

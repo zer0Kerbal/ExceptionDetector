@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExceptionDetector</name>
+    </assembly>
+    <members>
+        <member name="T:ExceptionDetector.Version">
+            <summary>Version - retrieved at compile from ExceptionDetector.version</summary>
+        </member>
+        <member name="F:ExceptionDetector.Version.major">
+            <summary>Major revision</summary>
+        </member>
+        <member name="F:ExceptionDetector.Version.minor">
+            <summary>Minor revision</summary>
+        </member>
+        <member name="F:ExceptionDetector.Version.patch">
+            <summary>Patch revision</summary>
+        </member>
+        <member name="F:ExceptionDetector.Version.build">
+            <summary>Build revision</summary>
+        </member>
+        <member name="F:ExceptionDetector.Version.Number">
+            <summary>Version String const</summary>
+        </member>
+        <member name="F:ExceptionDetector.Version.Text">
+            <summary>Text Version String const</summary>
+        </member>
+        <member name="F:ExceptionDetector.Version.SText">
+            <summary>Plain Text Version String const</summary>
+        </member>
+    </members>
+</doc>
