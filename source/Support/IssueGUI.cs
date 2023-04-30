@@ -215,7 +215,7 @@ namespace ExceptionDetector
 				GUILayout.BeginVertical(HighLogic.Skin.box);
 
 				GUILayout.Label(Localizer.Format("#EXCD-05", msgCount), this.titleStyle, GUILayout.Width(Screen.width * 0.2f));
-				GUILayout.Label(Localizer.Format("#EXCD-06}", Path.GetFullPath(ExceptionDetector.LogFile)), this.titleStyle, GUILayout.Width(Screen.width * 0.2f)); 
+				GUILayout.Label(Localizer.Format("#EXCD-06", Path.GetFullPath(ExceptionDetector.LogFile)), this.titleStyle, GUILayout.Width(Screen.width * 0.2f)); 
 
 				//GUILayout.Label(String.Format("TOP {0} ISSUES", msgCount), this.titleStyle, GUILayout.Width(Screen.width * 0.2f));
 				//GUILayout.Label(String.Format("More info availabe at {0}", Path.GetFullPath(ExceptionDetector.LogFile)), this.titleStyle, GUILayout.Width(Screen.width * 0.2f)); 
@@ -226,7 +226,7 @@ namespace ExceptionDetector
 				GUILayout.EndVertical();
 				GUILayout.FlexibleSpace();
 				//GUILayout.
-				if (GUILayout.Button("CLOSE", this.buttonStyle))
+				if (GUILayout.Button(Localizer.Format("#autoLOC_149410"), this.buttonStyle))
 				{
 					Destroy(this);
 				}
