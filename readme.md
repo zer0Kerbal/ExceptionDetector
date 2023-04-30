@@ -13,7 +13,7 @@ THIS FILE: CC BY-ND 4.0 by zer0Kerbal -->
 [![KSP version][KSP:shd]][KSP:url] [![License][LIC:shd]][LIC:url]  
 [![Curseforge][CURSFG:shd]][CURSFG:url] [![GitHub][GITHUB:shd]][GITHUB:url] [![GitHub Pages][SHD:pgs]][pages]
 
-![Code][SHD:cde]
+![Code][SHD:cde] ![Exception Detector][SHD:dll] 
 
 # [Exception Detector (EXCD)][CURSFG:url]
 
@@ -137,6 +137,7 @@ Comment, click, like, share, up-vote, subscribe
 
 <!--- shields -->
 [SHD:cde]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ExceptionDetector/master/json/code.json
+[SHD:dll]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ExceptionDetector/master/json/dll.json
 [SHD:mod]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ExceptionDetector/master/json/mod.json
 [SHD:pgs]: https://img.shields.io/badge/GitHub-Pages-white?style=plastic&labelColor=9cf&logoColor=181717&logo=github/ "GitHub IO"
 
