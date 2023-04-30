@@ -1,6 +1,5 @@
-#region Licence
-/*  BSD-2-Clause
- *  Copyright(c) 2014 godarklight, 2021,2023 zer0Kerbal
+#region BSD-2-Clause Licence
+/*  Copyright(c) 2014 godarklight, 2021,2023 zer0Kerbal
  *
  *	All rights reserved.
  *
@@ -25,6 +24,7 @@
  *	NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  *	SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
+#endregion
 
 using System;
 using System.Collections.Generic;
@@ -210,7 +210,7 @@ namespace ExceptionDetector
 				{
 					prvConditionStatement = condition;
 
-					strMessage = Localizer.Format("#EXCD_ABBV") + "\t" + preStack + "--> " + CleanCondition(condition) + "\n";		// #EXCD-02 = *EXCD*\t
+					strMessage = Localizer.Format("#EXCD-abbv") + "\t" + preStack + "--> " + CleanCondition(condition) + "\n";		// #EXCD-02 = *EXCD*\t
 					WriteLog(strMessage);
 					AddException(strMessage);
 					stackLogTick = 0;
@@ -218,7 +218,7 @@ namespace ExceptionDetector
 				}
 				else if (singlePass)
 				{
-					WriteLog(Localizer.Format("#EXCD_ABBV") + "\t" + condition + "\n");		// #EXCD-02 = *EXCD*\t
+					WriteLog(Localizer.Format("#EXCD-abbv") + "\t" + condition + "\n");		// #EXCD-02 = *EXCD*\t
 					AddException(CleanCondition(condition));
 				}
 				else if (stackLogTick == 0 && !condition.Equals(prvConditionStatement))
