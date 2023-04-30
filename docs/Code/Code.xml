@@ -4,7 +4,6 @@
         <name>ExceptionDetector</name>
     </assembly>
     <members>
-        <!-- Badly formed XML comment ignored for member "T:ExceptionDetector.ExceptionDetector" -->
         <member name="T:ExceptionDetector.Version">
             <summary>Version - retrieved at compile from ExceptionDetector.version</summary>
         </member>
