@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{1074C8AF-C3A2-440E-A827-F06B5F51764C}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ExceptionDetector</RootNamespace>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>ExceptionDetector</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
       <FileAlignment>512</FileAlignment>
